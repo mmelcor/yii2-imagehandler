@@ -1,0 +1,33 @@
+{
+    "name": "mmelcor/yii2-imagehandler",
+
+    "type": "yii2-extension",
+
+    "description": "A component to handle retriving multi-lingual images from an image repository.",
+    "keywords": ["yii2", "image", "multi-language", "helper", "translations"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/mmelcor/yii2-imagehandler/issues",
+        "source": "https://github.com/mmelcor/yii2-imagehandler"
+    },
+    "authors": [
+        {
+            "name": "Jeremiah Payne",
+            "email": "mmelcor@gmail.com"
+        },
+		{
+			"name": "Kevin Payne",
+			"email": "payneks@gmail.com"
+		}
+    ],
+
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "mmelcor\\yii2-imagehandler\\": ""
+        }
+    }
+}
