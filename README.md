@@ -35,9 +35,24 @@ Once installed, use it in your application by adding the following to your compo
 	],
 ],
 ```
-In your controller pass a new instance of the ImageHandler
+In your controller either add the component to your init() by delcaring a protected variable and passing it as a parameter:
 ```
-$iHandler = new imageHandler();
+protected $iHandler;
+
+public function init() {
+	$this->iHandler = Yii::$app->imageHandler;
+}
+$this->parameters = [
+	'iHandler' => $this->iHandler,
+]:
+```
+or pass it to your views in the view action:
+```
+$iHandler = Yii::$app->imageHandler;
+
+return $this->render('view', [
+	'iHandler' => $iHandler,
+]);
 ```
 
 to call the specific image place the following in your view.
