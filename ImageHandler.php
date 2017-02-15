@@ -24,7 +24,7 @@ class ImageHandler extends \yii\base\Component {
 		if(self::fileExists($path)) {
 			return $this->hostUrl.$this->siteFolder."/".$lang."/".$path;
 		} else {
-			return $this->hostUrl.$this->siteFolder."/en".$path;
+			return $this->hostUrl.$this->siteFolder."/".$defaultLang."/".$path;
 		}
 	}
 
