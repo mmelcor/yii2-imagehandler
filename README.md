@@ -57,7 +57,7 @@ return $this->render('view', [
 
 to call the specific image place the following in your view.
 ```
-<img src="<?= $iHandler->getImage('[path to image]') ?>" class="[classes]" alt="[image description]" />
+<img src="<?= $iHandler->getImage('/path/to/img') ?>" class="[classes]" alt="[image description]" />
 ```
 
 This component works best with [oorrwullie\yii2-babelfishfood](https://github.com/oorrwullie/yii2-babelfishfood).
