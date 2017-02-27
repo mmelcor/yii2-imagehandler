@@ -22,9 +22,9 @@ class ImageHandler extends \yii\base\Component {
 	public function getImage($path) {
 		$lang = Yii::$app->language;
 		if(self::fileExists($path)) {
-			return $this->hostUrl."/".$this->siteFolder."/".$lang."/".$path;
+			return $this->hostUrl."/".$this->siteFolder."/".$lang.$path;
 		} else {
-			return $this->hostUrl."/".$this->siteFolder."/".$this->defaultLang."/".$path;
+			return $this->hostUrl."/".$this->siteFolder."/".$this->defaultLang.$path;
 		}
 	}
 
